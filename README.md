@@ -40,7 +40,7 @@ HrFlow.ai offers a simple way to parse your resumes no matter the format (pdf, d
 <!-- Table -->
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
-|[[Parsing] profile_job_parsing.ipynb](/examples/%5BParsing%5D%20profile_job_parsing.ipynb) | Parse and store raw CVs and job descriptions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BParsing%5D%20parse%26store_profiles%26jobs.ipynb) |
+|[[Parsing] profile_job_parsing.ipynb](/examples/%5BParsing%5D%20profile_job_parsing.ipynb) | Parse and store raw CVs and job descriptions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BParsing%5D%20profile_job_parsing.ipynb) |
 
 
 ### Training
@@ -49,4 +49,4 @@ HrFlow.ai offers a simple way to enhace your scoring models with your own histor
 <!-- Table -->
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
-|[[Training] tracking_data_upload.ipynb](examples/%5BTraining%5D%20tracking_data_upload.ipynb)| Upload tracking data to HrFlow.ai to enable the training feature | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTraining%5D_upload_tracking_data.ipynb)
+|[[Training] tracking_data_upload.ipynb](examples/%5BTraining%5D%20tracking_data_upload.ipynb)| Upload tracking data to HrFlow.ai to enable the training feature | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTraining%5D%20tracking_data_upload.ipynb)
