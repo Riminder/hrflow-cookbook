@@ -27,7 +27,7 @@
 
 ---
 
-# HrFlow-Cookbook
+# HrFlow Cookbook
 Repository containing helpful notebooks by the HrFlow.ai team
 
 All notebooks can run on [Google Colab](https://colab.research.google.com/)
