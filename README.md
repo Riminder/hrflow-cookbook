@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  HrFlow.ai Cookbok
+  HrFlow.ai Cookbook
 </h1>
 <p align="center">
     <em><b>Unify, Unleash, Automate Talent & Workforce Data</b></em>
