@@ -35,7 +35,7 @@ All notebooks can run on [Google Colab](https://colab.research.google.com/)
 ## Getting started
 
 ### Parsing
-HrFlow.ai offers a simple way to parse your resumes no matter the format (pdf, docx, html, etc.), to extract relevent information from your job descriptions. 
+HrFlow.ai offers a simple way to parse your resumes no matter the format (pdf, docx, html, etc.), and to extract relevent information from your job descriptions. 
 
 <!-- Table -->
 | Notebook | Description | Colab |
