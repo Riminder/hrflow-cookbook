@@ -4,7 +4,7 @@
   </a>
 </p>
 <h1 align="center">
-  HrFlow.ai Python SDK
+  HrFlow.ai Cookbok
 </h1>
 <p align="center">
     <em><b>Unify, Unleash, Automate Talent & Workforce Data</b></em>
