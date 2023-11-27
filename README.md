@@ -43,6 +43,13 @@ HrFlow.ai offers a simple way to parse your resumes no matter the format (pdf, d
 |[[Parsing] profile_job_parsing.ipynb](/examples/%5BParsing%5D%20profile_job_parsing.ipynb) | Parse and store raw CVs and job descriptions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BParsing%5D%20profile_job_parsing.ipynb) |
 
 
+### Scoring
+Score your candidates and jobs with HrFlow.ai's scoring models.
+| Notebook | Description | Colab |
+| :--- | :--- | :--- |
+|[[Scoring] test_scoring_api.ipynb](examples/%5BScoring%5D%20test_scoring_api.ipynb)| Test the scoring API as a talent or recruiter copilot | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20test_scoring_api.ipynb)
+
+
 ### Training
 HrFlow.ai offers a simple way to enhace your scoring models with your own historical data.
 
