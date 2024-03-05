@@ -1,3 +1,14 @@
+# Data
+*.json
+*.docx
+*.pdf
+*.doc
+*.txt
+*.pptx
+*.ppt
+*.xlsx
+*.xls
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
