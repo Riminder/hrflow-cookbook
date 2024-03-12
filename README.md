@@ -41,6 +41,7 @@ HrFlow.ai offers a simple way to parse your resumes no matter the format (pdf, d
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
 |[[Parsing] profile_job_parsing.ipynb](/examples/%5BParsing%5D%20profile_job_parsing.ipynb) | Parse and store raw CVs and job descriptions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BParsing%5D%20profile_job_parsing.ipynb) |
+| [[Parsing] parsing_evaluator.ipynb](/examples/%5BParsing%5D%20parsing_evaluator.ipynb) | Evaluate the parsing quality of HrFlow.ai | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BParsing%5D%20parsing_evaluator.ipynb) |
 
 
 ### Scoring
