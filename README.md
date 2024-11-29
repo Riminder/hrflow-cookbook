@@ -49,7 +49,7 @@ Score your candidates and jobs with HrFlow.ai's scoring models.
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
 |[[Scoring] test_scoring_api.ipynb](examples/%5BScoring%5D%20test_scoring_api.ipynb)| Test the scoring API as a talent or recruiter copilot | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20test_scoring_api.ipynb)
-|[[Scoring] indexing_profiles_with_missing_fields.ipynb](examples/%5BScoring%5D%20test_scoring_api.ipynb)| Tackle the challenge of non-indexed profile | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20indexing_profiles_with_missing_fields.ipynb)
+|[[Scoring] enrich_anonymized_profiles.ipynb](examples/%5BScoring%5D%20enrich_anonymized_profiles.ipynb)| Tackle the challenge of non-indexed profile | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20enrich_anonymized_profiles.ipynb)
 
 
 ### Training
