@@ -1,16 +1,14 @@
 """
 Script to archive profiles from Hrflow.ai based on their creation date.
-Packages to install :
-    hrflow             (pypi): pip install hrflow
 
 Usage:
-    python script.py <api_secret> <api_user> <source_key> [--min_duration <years|months>]
+    python script.py <api_secret> <api_user> <source_key> [--min_duration <years|months|weeks|days>]
 
 Arguments:
     api_secret          (str): API secret key for Hrflow
     api_user            (str): API user for Hrflow
     source_key          (str): Source key for Hrflow profiles
-    --min_duration      (str): Minimum duration to archive profiles (in years or months, e.g., '2y' or '6m')
+    --min_duration      (str): Minimum duration to archive profiles (e.g., '2y', '6m', '3w', or '10d')
 
 Example:
     python script.py your_api_secret your_api_user your_source_key --min_duration 3y
@@ -19,8 +17,11 @@ Example:
     python script.py your_api_secret your_api_user your_source_key --min_duration 6m
     This will archive profiles created before 6 months ago.
     
-    python script.py your_api_secret your_api_user your_source_key
-    This will archive profiles created before 2 years ago (default).
+    python script.py your_api_secret your_api_user your_source_key --min_duration 3w
+    This will archive profiles created before 3 weeks ago.
+    
+    python script.py your_api_secret your_api_user your_source_key --min_duration 10d
+    This will archive profiles created before 10 days ago.
 """
 
 import argparse
@@ -30,6 +31,15 @@ from hrflow.utils import get_all_profiles
 from datetime import datetime, timezone
 
 def calculate_duration_in_years(input_date):
+    """
+    Calculate the duration in decimal years between now and the input date.
+
+    Args:
+        input_date (str): Date string in the format "YYYY-MM-DDTHH:MM:SS[+0000|Z]".
+
+    Returns:
+        float: Duration in decimal years.
+    """
     try:
         if input_date.endswith("Z"):
             input_date = input_date.replace("Z", "+0000")
@@ -45,12 +55,18 @@ def calculate_duration_in_years(input_date):
 
 def convert_to_decimal_years(period):
     """
-    Convert period in 'Xy' for years or 'Xm' for months to decimal years.
-    Example: '2y' -> 2.0, '6m' -> 0.5
+    Convert a duration string (e.g., '2y', '6m', '3w', '10d') into decimal years.
+
+    Args:
+        period (str): Duration string in the format 'Xy' (years), 'Xm' (months),
+                      'Xw' (weeks), or 'Xd' (days).
+
+    Returns:
+        float: Equivalent duration in decimal years.
     """
-    match = re.match(r'(\d+)(y|m)', period.strip().lower())
+    match = re.match(r'(\d+)(y|m|w|d)', period.strip().lower())
     if not match:
-        raise ValueError(f"Invalid period format: {period}. Use 'Xy' for years or 'Xm' for months.")
+        raise ValueError(f"Invalid period format: {period}. Use 'Xy' for years, 'Xm' for months, 'Xw' for weeks, or 'Xd' for days.")
     
     value, unit = match.groups()
     value = int(value)
@@ -59,8 +75,21 @@ def convert_to_decimal_years(period):
         return float(value)  # Directly return years as decimal years
     elif unit == 'm':
         return value / 12  # Convert months to years (e.g., 6 months = 0.5 years)
+    elif unit == 'w':
+        return value / 52.1775  # Convert weeks to years (e.g., 1 week ≈ 0.019 years)
+    elif unit == 'd':
+        return value / 365.25  # Convert days to years (e.g., 1 day ≈ 0.0027 years)
 
 def archive_profiles(api_secret, api_user, source_key, min_duration):
+    """
+    Archive profiles from Hrflow.ai based on their creation date.
+
+    Args:
+        api_secret (str): API secret key for Hrflow
+        api_user (str): API user for Hrflow
+        source_key (str): Source key for Hrflow profiles
+        min_duration (float): Minimum duration (in decimal years) to archive profiles
+    """
     hrflow_client = Hrflow(api_secret=api_secret, api_user=api_user)
     profiles = get_all_profiles(hrflow_client, source_key=source_key)
     failed = []
@@ -88,7 +117,7 @@ def main():
     parser.add_argument("api_secret", help="API secret key for Hrflow")
     parser.add_argument("api_user", help="API user for Hrflow")
     parser.add_argument("source_key", help="Source key for Hrflow profiles")
-    parser.add_argument("--min_duration", type=str, default="2y", help="Minimum duration to archive profiles (in years or months, e.g., '2y' or '6m')")
+    parser.add_argument("--min_duration", type=str, default="2y", help="Minimum duration to archive profiles (e.g., '2y', '6m', '3w', '10d')")
 
     args = parser.parse_args()
     
