@@ -59,3 +59,21 @@ HrFlow.ai offers a simple way to enhace your scoring models with your own histor
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
 |[[Training] tracking_data_upload.ipynb](examples/%5BTraining%5D%20tracking_data_upload.ipynb)| Upload tracking data to HrFlow.ai to enable the training feature | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTraining%5D%20tracking_data_upload.ipynb)
+
+
+### Tagging
+HrFlow.ai offers a simple way to categorize HR document using the tagging API.
+
+<!-- Table -->
+| Notebook | Description | Colab |
+| :--- | :--- | :--- |
+|[[Tagging] ocr_and_categorize_a_document.ipynb](examples/%5BTagging%5D%20ocr_and_categorize_a_document.ipynb)| Categorize HR documents | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTagging%5D%20ocr_and_categorize_a_document.ipynb)
+
+
+### Storing
+Archive profiles based on their storing duration in an HrFlow.ai source.
+
+<!-- Table -->
+| Notebook | Description | Colab |
+| :--- | :--- | :--- |
+|[[Storing] archive_profiles_based_on_creation_date.ipynb](examples/%5BStoring%5D%20archive_profiles_based_on_creation_date.ipynb)| Archive Profiles | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BStoring%5D%20archive_profiles_based_on_creation_date.ipynb)
