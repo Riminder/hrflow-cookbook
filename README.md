@@ -43,23 +43,13 @@ HrFlow.ai offers a simple way to parse your resumes no matter the format (pdf, d
 |[[Parsing] profile_job_parsing.ipynb](/examples/%5BParsing%5D%20profile_job_parsing.ipynb) | Parse and store raw CVs and job descriptions | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BParsing%5D%20profile_job_parsing.ipynb) |
 | [[Parsing] parsing_evaluator.ipynb](/examples/%5BParsing%5D%20parsing_evaluator.ipynb) | Evaluate the parsing quality of HrFlow.ai | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BParsing%5D%20parsing_evaluator.ipynb) |
 
-
-### Scoring
-Score your candidates and jobs with HrFlow.ai's scoring models.
-| Notebook | Description | Colab |
-| :--- | :--- | :--- |
-|[[Scoring] test_scoring_api.ipynb](examples/%5BScoring%5D%20test_scoring_api.ipynb)| Test the scoring API as a talent or recruiter copilot | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20test_scoring_api.ipynb)
-|[[Scoring] enrich_anonymized_profiles.ipynb](examples/%5BScoring%5D%20enrich_anonymized_profiles.ipynb)| Tackle the challenge of non-indexed profile | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20enrich_anonymized_profiles.ipynb)
-
-
-### Training
-HrFlow.ai offers a simple way to enhace your scoring models with your own historical data.
+### Storing
+Archive profiles based on their storing duration in an HrFlow.ai source.
 
 <!-- Table -->
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
-|[[Training] tracking_data_upload.ipynb](examples/%5BTraining%5D%20tracking_data_upload.ipynb)| Upload tracking data to HrFlow.ai to enable the training feature | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTraining%5D%20tracking_data_upload.ipynb)
-
+|[[Storing] archive_profiles_based_on_creation_date.ipynb](examples/%5BStoring%5D%20archive_profiles_based_on_creation_date.ipynb)| Archive Profiles | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BStoring%5D%20archive_profiles_based_on_creation_date.ipynb)
 
 ### Tagging
 HrFlow.ai offers a simple way to categorize HR document using the tagging API.
@@ -70,10 +60,28 @@ HrFlow.ai offers a simple way to categorize HR document using the tagging API.
 |[[Tagging] ocr_and_categorize_a_document.ipynb](examples/%5BTagging%5D%20ocr_and_categorize_a_document.ipynb)| Categorize HR documents | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTagging%5D%20ocr_and_categorize_a_document.ipynb)
 
 
-### Storing
-Archive profiles based on their storing duration in an HrFlow.ai source.
+### Scoring
+Score your candidates and jobs with HrFlow.ai's scoring models.
+| Notebook | Description | Colab |
+| :--- | :--- | :--- |
+|[[Scoring] test_scoring_api.ipynb](examples/%5BScoring%5D%20test_scoring_api.ipynb)| Test the scoring API as a talent or recruiter copilot | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20test_scoring_api.ipynb)
+|[[Scoring] enrich_anonymized_profiles.ipynb](examples/%5BScoring%5D%20enrich_anonymized_profiles.ipynb)| Tackle the challenge of non-indexed profile | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BScoring%5D%20enrich_anonymized_profiles.ipynb)
+
+
+
+### Grading
+Grade profiles for a job offer
+<!-- Table -->
+| Notebook | Description | Colab |
+| :--- | :--- | :--- |
+|[[Grading] fast_grade_profiles_for_new_job.ipynb](examples/%5BGrading%5D%20fast_grade_profiles_for_new_job.ipynb)| Combine Scoring and Grading for Optimal Matching of Profiles to a Job Offer | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BGrading%5D%20fast_grade_profiles_for_new_job.ipynb)
+
+
+
+### Training
+HrFlow.ai offers a simple way to enhace your scoring models with your own historical data.
 
 <!-- Table -->
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
-|[[Storing] archive_profiles_based_on_creation_date.ipynb](examples/%5BStoring%5D%20archive_profiles_based_on_creation_date.ipynb)| Archive Profiles | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BStoring%5D%20archive_profiles_based_on_creation_date.ipynb)
+|[[Training] tracking_data_upload.ipynb](examples/%5BTraining%5D%20tracking_data_upload.ipynb)| Upload tracking data to HrFlow.ai to enable the training feature | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTraining%5D%20tracking_data_upload.ipynb)
