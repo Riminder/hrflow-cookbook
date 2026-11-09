@@ -58,6 +58,7 @@ HrFlow.ai offers a simple way to categorize HR document using the tagging API.
 | Notebook | Description | Colab |
 | :--- | :--- | :--- |
 |[[Tagging] ocr_and_categorize_a_document.ipynb](examples/%5BTagging%5D%20ocr_and_categorize_a_document.ipynb)| Categorize HR documents | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTagging%5D%20ocr_and_categorize_a_document.ipynb)
+|[[Tagging] language_tagger.ipynb](examples/%5BTagging%5D%20language_tagger.ipynb)| Tag each language of a parsed profile with its ISO 639-1 code and CEFR level (`de:C1`): set up the taxonomies and tagging agents, then a live demo | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Riminder/hrflow-cookbook/blob/main/examples/%5BTagging%5D%20language_tagger.ipynb)
 
 
 ### Scoring
